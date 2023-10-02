@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nightsbridge Widget</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.nightsbridge.com/flatpickr/material_blue-1.0.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.nightsbridge.com/flatpickr/flatpickr.min-1.0.css">
+  <script src="https://cdn.nightsbridge.com/flatpickr/flatpickr.min-1.0.js"></script>
+  
+<link href="nb_DateWidgetStyle.css" rel="stylesheet"></head>
+<body>
+<script type="text/javascript" src="nb_DateWidget.js"></script>
+<div class="nb_container">
+  <div class="nb_grid-container">
+    <div class="nb_grid-row">
+      <div class="nb_grid-cell-1 nb_grid_header" data-title="Arrival">
+        <label class="nb_header" id="nb_checkInHeader">Arrival</label>
+      </div>
+      <div class="nb_grid-cell-2 nb_grid_header" data-title="Departure">
+        <label class="nb_header" id="nb_checkOutHeader">Departure</label>
+      </div>
+      <div class="nb_grid-cell-3" data-title="">
+      </div>
+    </div>
+    <div class="nb_grid-row">
+      <div class="nb_grid-cell-1" data-title="Arrival">
+        <div class="nb_datePicker">
+          <input class="form-control" type="text" id="nb_CheckInDate" placeholder="YYYY-MM-DD">
+        </div>
+      </div>
+      <div class="nb_grid-cell-2" data-title="Departure">
+        <div class="nb_datePicker">
+          <label for="nb_CheckOutDate"></label><input class="form-control" type="text" id="nb_CheckOutDate" placeholder="YYYY-MM-DD">
+        </div>
+      </div>
+      <div class="nb_grid-cell-3" data-title="">
+        <button id="nb_checkAvailabilityBtn" class="nb_btn submit" type="submit" value="Check Availability">
+          <span class="nb_buttonText">Check Availability</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

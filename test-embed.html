@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nightsbridge Widget</title>
+  <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
+  <link rel="stylesheet"  type="text/css" href="../nb_DateWidgetStyle.css">
+</head>
+<body>
+<h1>Nightsbridge Date Widget</h1>
+<h3>This is an example of how to integrate the widget into your website</h3>
+<div style="position: relative;padding-bottom: 56.25%;padding-top: 35px;height: 0;overflow: hidden;">
+  <div class="nb_container">
+    <div class="nb_grid-container">
+      <div class="nb_grid-row">
+        <div class="nb_grid-cell-1" data-title="Check-In">
+          <label class="nb_header" id="nb_checkInHeader">Check-In</label>
+        </div>
+        <div class="nb_grid-cell-2" data-title="Check-Out">
+          <label class="nb_header" id="nb_checkOutHeader">Check-Out</label>
+        </div>
+        <div class="nb_grid-cell-3" data-title="">
+        </div>
+      </div>
+      <div class="nb_grid-row">
+        <div class="nb_grid-cell-1" data-title="Check-In">
+          <div class="nb_datePicker">
+            <input class="form-control" type="text" id="nb_CheckInDate" placeholder="YYYY-MM-DD">
+          </div>
+        </div>
+        <div class="nb_grid-cell-2" data-title="Check-Out">
+          <div class="nb_datePicker">
+            <label for="nb_CheckOutDate"></label><input class="form-control" type="text" id="nb_CheckOutDate" placeholder="YYYY-MM-DD">
+          </div>
+        </div>
+        <div class="nb_grid-cell-3" data-title="">
+          <button id="nb_checkAvailabilityBtn" class="nb_btn submit" type="submit" value="Check Availability">
+            <span class="nb_buttonText">Check Availability</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script type="text/javascript" src="../nb_DateWidget.js"></script>
+</html>
